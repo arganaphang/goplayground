@@ -1,0 +1,6 @@
+version: '3'
+tasks:
+  seed:
+    cmds:
+      - hey -n 10000 -c 50 -m GET http://localhost:8000/counter
+    silent: true
